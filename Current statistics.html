@@ -1,0 +1,474 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Tamil Nadu Map</title>
+<script language="javascript">
+</script>
+<style type="text/css">
+.title{
+position: absolute;
+width: 240px;
+height: 200px;
+top:40%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size: 30px;
+letter-spacing: 2px;
+text-align: center;
+text-shadow: 3px 5px 6px #808080;
+}
+img{
+position: absolute;
+left: 250px;
+top:5px;
+}
+#covid_cases{
+position: absolute;
+padding: 10px;
+right: 250px;
+top: 30px;
+min-width: 290px;
+max-width: 320px;
+height: 450px;
+padding: 10px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+box-shadow: -7px 10px 39px 9px rgba(80,237,55,0.75);
+-webkit-box-shadow: -7px 10px 39px 9px rgba(80,237,55,0.75);
+-moz-box-shadow: -7px 10px 39px 9px rgba(80,237,55,0.75);
+}
+#covid_cases img{
+position: relative;
+width: 100%;
+height: 180px;
+left: 0;
+visibility: hidden;
+}
+#covid_cases span{
+position: absolute;
+top:220px;
+font-size: 24px;
+}
+area{
+cursor : pointer;
+}
+p{
+line-height : 30px;
+font-size : 23px;
+letter-spacing : 2px;
+}
+</style>
+<script language="javascript">
+function enable(dn)
+{
+var covid_cases = document.getElementById('covid_cases');
+covid_cases.style.visibility= "visible";
+var imgsrc = covid_cases.getElementsByTagName('img')[0];
+imgsrc.style.visibility="visible";
+var district =covid_cases.getElementsByTagName('h2')[0];
+district.style.visibility="visible";
+var hr= covid_cases.getElementsByTagName('hr')[0];
+hr.style.visibility = "visible";
+var para = covid_cases.getElementsByTagName('p')[0];
+para.style.visibility= "visible";
+var span = covid_cases.getElementsByTagName('span')[0];
+span.style.visibility= "hidden";
+switch(dn)
+{
+case 1 :
+imgsrc.src="doll.jpg";
+district.innerHTML="Thanjavur";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 68,972' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 864'
++ "<br>" +
+'Total Recovery : 67,113' ;
+break;
+case 2:
+imgsrc.src="thirumalai nayak palace.jpg";
+district.innerHTML="Tirunelveli";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 48,151' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 430'
++ "<br>" +
+'Total Recovery : 47,469' ;
+break;
+case 3:
+imgsrc.src="v.jpg";
+district.innerHTML="Vellore";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 48,356' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 1,097'
++ "<br>" +
+break;
+'Total Recovery : 46,951' ;
+case 5: imgsrc.src="images.jpg"; district.innerHTML="Kanyakumari";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 60,451' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 1,022'
++ "<br>" +
+break;
+'Total Recovery : 59,090' ;
+case 6:
+imgsrc.src="Panchalankurichi_Fort.jpg";
+district.innerHTML="Thoothukudi";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 55,274' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 398'
++ "<br>" +
+break;
+'Total Recovery : 54,680' ;
+case 7:
+imgsrc.src="malli poo.jpg";
+district.innerHTML="Madurai";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 73,729' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 1,147'
++ "<br>" +
+break;
+'Total Recovery : 72,354' ;
+case 8:
+imgsrc.src="Shenbaga-Thopu.jpg";
+district.innerHTML="Virudhunagar";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 45,628' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 542'
++ "<br>" +
+'Total Recovery : 44,949' ;
+break;
+case 9:
+imgsrc.src="photo.jpg";
+district.innerHTML="Ramanathapuram";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 20,110' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 351'
++ "<br>" +
+break;
+'Total Recovery : 19,665' ;
+case 10:
+imgsrc.src="meghamalai.jpg";
+district.innerHTML="Theni";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 43,038' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 514'
++ "<br>" +
+break;
+'Total Recovery : 42,404' ;
+case 11:
+imgsrc.src="Sivagangai.jpg";
+district.innerHTML="Sivagangai";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 19,022' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 199'
++ "<br>" +
+break;
+'Total Recovery : 18,594' ;
+case 12:
+imgsrc.src="caption.jpg";
+district.innerHTML="Dindigul";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 32,322' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 627'
++ "<br>" +
+break;
+'Total Recovery : 31,538' ;
+case 13:
+imgsrc.src="Thirumayam-Fort.jpg";
+district.innerHTML="Pudukkottai";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 28,533' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 372'
++ "<br>" +
+break;
+'Total Recovery : 27,805' ;
+case 14:
+imgsrc.src="chennai.jpg";
+district.innerHTML="Chennai";
+para.innerHTML ='Total cases &nbsp; &nbsp;: 5,40,300' + "<br>"
++ 'Total Deaths &nbsp; : 8,345' +
+"<br>" +
+break;
+'Total Recovery:5,29,907' ;
+case 15:
+imgsrc.src="download.jpg";
+district.innerHTML="Tiruppur";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 88,754' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 876'
++ "<br>" +
+'Total Recovery : 87,021' ;
+break;
+case 16:
+imgsrc.src="coimbatore-tamil-nadu.jpg";
+district.innerHTML="Coimbatore";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 2,31,863' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 2,201'
++ "<br>" +
+break;
+'Total Recovery : 2,27,403' ;
+case 17:
+imgsrc.src="karur.jpg";
+district.innerHTML="Karur";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 22,836' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 351'
++ "<br>" +
+break;
+'Total Recovery : 22,297' ;
+case 18:
+imgsrc.src="tiruvarur.jpg";
+district.innerHTML="Triuvarur";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 28,410' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 604
+' + "<br>" +
+break;
+'Total Recovery : 27,628' ;
+case 19:
+imgsrc.src="tiruchirappalli1.jpg";
+district.innerHTML="Tiruchirappalli";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 73,209' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 979'
++ "<br>" +
+break;
+'Total Recovery : 71,481' ;
+case 20:
+imgsrc.src="nagapattinam.jpg";
+district.innerHTML="Nagapattinam";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 19,075' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 295'
++ "<br>" +
+break;
+'Total Recovery : 18,353' ;
+case 21:
+imgsrc.src="nilgris.jpg";
+district.innerHTML="Nilgris";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 31,048' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 186'
++ "<br>" +
+break;
+'Total Recovery : 30,369' ;
+case 22:
+imgsrc.src="erode.jpg";
+district.innerHTML="Erode";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 95,559' + "<br>"
++ "<br>" +
+break;
++ 'Total Deaths &nbsp; &nbsp;: 641'
+'Total Recovery : 93,208' ;
+case 23:
+imgsrc.src="Salem.jpg";
+district.innerHTML="Salem";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 94,328' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 1,597'
++ "<br>" +
+break;
+'Total Recovery : 91,888' ;
+case 24:
+imgsrc.src="Namakkal.jpg";
+district.innerHTML="Namakkal";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 47,771' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 458'
++ "<br>" +
+break;
+'Total Recovery : 46,739' ;
+case 25:
+imgsrc.src="peramballur.jpg";
+district.innerHTML="Perambalur";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 11,579' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 225'
++ "<br>" +
+break;
+'Total Recovery : 11,245' ;
+case 26:
+imgsrc.src="viluppuram.jpg";
+district.innerHTML="Viluppuram";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 44,205' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 341'
++ "<br>" +
+break;
+'Total Recovery : 43,506' ;
+case 27:
+imgsrc.src="ariyalur.jpg";
+district.innerHTML="Ariyalur";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 16,037' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 240'
++ "<br>" +
+break;
+'Total Recovery : 15,560' ;
+case 28:
+imgsrc.src="images2.jpg";
+district.innerHTML="Cuddalore";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 61,220' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 821'
++ "<br>" +
+break;
+'Total Recovery : 59,622' ;
+case 29:
+imgsrc.src="kanchipuram.jpg";
+district.innerHTML="kanchipuram";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 72,144' + "<br>"
++ "<br>" +
+break;
++ 'Total Deaths &nbsp; &nbsp;: 1,213'
+'Total Recovery : 70,483' ;
+case 30:
+imgsrc.src="Krishnagiri_temple.jpg";
+district.innerHTML="krishnagiri";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 41,638' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 325'
++ "<br>" +
+break;
+'Total Recovery : 41,004' ;
+case 31:
+imgsrc.src="Dharmapuri.jpg";
+district.innerHTML="Dharmapuri";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 26,415' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 237
+' + "<br>" +
+break;
+'Total Recovery : 25,862' ;
+case 32:
+imgsrc.src="download (1).jpg";
+district.innerHTML="Tiruvannamalai";
+para.innerHTML ='Total cases &nbsp; &nbsp; &nbsp;: 52,586' + "<br>"
++ 'Total Deaths &nbsp; &nbsp;: 641'
++ "<br>" +
+break;
+'Total Recovery : 51,442' ;
+default: alert('some error');
+}
+}
+function disable()
+{
+var covid_cases = document.getElementById('covid_cases');
+covid_cases.style.visibility= "visible";
+var imgsrc = covid_cases.getElementsByTagName('img')[0];
+imgsrc.style.visibility = "hidden";
+var district
+=covid_cases.getElementsByTagName('h2')[0].style.visibility="hidden";
+var hr= covid_cases.getElementsByTagName('hr')[0];
+hr.style.visibility = "hidden";
+var para = covid_cases.getElementsByTagName('p')[0];
+para.style.visibility= "hidden";
+covid_cases.getElementsByTagName('span')[0].style.visibility= "visible";
+}
+</script>
+</head>
+<body >
+<div style ="position : relative;">
+<div class="title"> TAMILNADU MAP</div>
+<img id="map" src="t3org.png" style="position: relative;" useMap="#tamilnadumap">
+<map name="tamilnadumap">
+<area id="Thanjavur" shape="poly"
+coords="285,301,317,325,322,366,359,350,324,296,346,296,350,269"
+onmouseover="enable(1)" onmouseout="disable()" >
+<area id="Tirunelveli" shape="poly"
+coords="143,588,171,574,152,483,168,478,119,454,107,509" onmouseover="enable(2)"
+onmouseout="disable()" >
+<area id="Vellore" shape="poly"
+coords="239,102,295,52,379,44,387,60,327,84,291,94,265,136"
+onmouseover="enable(3)" onmouseout="disable()" >
+<area id="Tiruvallur" shape="poly"
+coords="343,49,352,22,373,26,396,22,425,11,449,24,440,41,421,48,400,60,383,44"
+onmouseover="enable(4)" onmouseout="disable()" >
+<area id="Kanayakumari" shape="poly"
+coords="109,545,101,561,91,577,107,589,125,593,139,593,134,573,122,550"
+onmouseover="enable(5)" onmouseout="disable()" >
+<area id="Thoothukudi" shape="poly"
+coords="175,569,167,547,163,509,153,482,173,479,188,463,210,459,225,478,216,498,22
+5,478,207,517,201,535,200,552,190,568" onmouseover="enable(6)"
+onmouseout="disable()" >
+<area id="Madurai" shape="poly"
+coords="147,412,165,385,203,371,220,370,234,361,237,372,230,395,207,403,196,419,17
+6,426,156,420" onmouseover="enable(7)" onmouseout="disable()" >
+<area id="Virudhunagar" shape="poly"
+coords="119,452,139,429,170,427,205,417,224,424,217,443,227,464,202,455,185,470,17
+0,487,163,469,149,464,132,459" onmouseover="enable(8)" onmouseout="disable()" >
+<area id="Ramanathapuram" shape="poly"
+coords="230,489,216,471,218,451,226,439,245,433,263,433,276,425,267,404,282,405,29
+9,397,303,412,290,434,293,452,314,463,300,467,277,473,254,484"
+onmouseover="enable(9)" onmouseout="disable()" >
+<area id="Theni" shape="poly"
+coords="125,436,106,431,105,413,107,392,107,371,128,372,148,366,159,374,158,392,14
+9,411,137,422" onmouseover="enable(10)" onmouseout="disable()" >
+<area id="Sivagangai" shape="poly"
+coords="209,402,222,398,240,386,234,368,242,346,247,362,261,359,265,370,284,371,29
+3,378,294,391,284,402,272,402,267,411,275,428,260,435,242,429,228,427,215,419"
+onmouseover="enable(11)" onmouseout="disable()" >
+<area id="Dindigul" shape="poly"
+coords="109,369,118,357,122,338,131,318,147,315,162,317,176,317,190,309,208,302,21
+1,322,221,341,227,361,214,376,201,370,190,378,172,381,160,378,156,367,137,369,122,3
+72" onmouseover="enable(12)" onmouseout="disable()" >
+<area id="Pudukkottai" shape="poly"
+coords="308,403,300,386,283,371,267,371,259,359,243,365,247,353,253,340,243,328,25
+5,317,266,310,278,312,290,317,306,320,315,332,313,348,305,357,313,367,327,381,318,3
+91" onmouseover="enable(13)" onmouseout="disable()" >
+<area id="Chennai" shape="poly" coords="439,58,436,51,442,49"
+onmouseover="enable(14)" onmouseout="disable()" >
+<area id="Tiuppur" shape="poly"
+coords="172,297,168,274,148,265,127,262,114,245,100,242,81,252,85,271,92,294,95,319
+,87,339,97,346,112,356,120,334,132,314,151,310,164,315" onmouseover="enable(15)"
+onmouseout="disable()" >
+<area id="Coimbatore" shape="poly"
+coords="87,234,64,245,51,268,51,289,67,301,60,324,64,347,78,357,87,343,92,326,101,31
+6,92,293,85,278,85,256" onmouseover="enable(16)" onmouseout="disable()" >
+<area id="Karur" shape="poly"
+coords="172,314,175,300,167,287,170,273,184,273,203,273,229,288,247,294,237,304,21
+9,306,213,329,210,304,187,303,185,317" onmouseover="enable(17)"
+onmouseout="disable()" >
+<area id="Triuvarur" shape="poly"
+coords="377,280,358,287,346,300,323,301,329,313,345,325,355,334,370,349,375,328,37
+7,313,379,294" onmouseover="enable(18)" onmouseout="disable()" >
+<area id="Tiruchirappalli" shape="poly"
+coords="245,235,239,251,229,268,213,275,216,284,229,284,246,290,247,304,231,307,21
+8,311,213,327,219,335,224,345,231,353,240,346,249,340,245,333,244,318,256,313,266,3
+11,275,312,285,305,291,295,302,288,309,275,300,267,286,264,270,263,263,251,256,241"
+onmouseover="enable(19)" onmouseout="disable()" >
+<area id="Nagapattinam" shape="poly"
+coords="395,355,392,337,393,315,392,295,381,294,377,308,381,321,377,334,369,351,38
+0,355" onmouseover="enable(20)" onmouseout="disable()" >
+<area id="Nilgris" shape="poly"
+coords="77,234,76,215,55,209,34,199,17,204,3,213,5,227,20,232,31,239,23,254,38,256,5
+5,251,66,244" onmouseover="enable(21)" onmouseout="disable()" >
+<area id="Erode" shape="poly"
+coords="81,234,77,219,67,199,82,193,99,196,111,193,127,194,138,179,151,176,156,188,
+156,198,164,210,160,228,171,243,179,258,174,271,158,268,140,264,127,258,113,243,95,
+242" onmouseover="enable(22)" onmouseout="disable()" >
+<area id="Salem" shape="poly"
+coords="160,173,178,179,199,174,218,173,230,187,250,188,266,185,264,204,277,204,28
+4,220,273,233,256,245,245,233,240,217,221,222,199,226,177,230,163,225,164,206,157,1
+89" onmouseover="enable(23)" onmouseout="disable()" >
+<area id="Namakkal" shape="poly"
+coords="164,225,187,231,206,227,222,227,239,225,245,240,234,260,224,274,207,275,18
+5,271,170,247" onmouseover="enable(24)" onmouseout="disable()" >
+<area id="Perambalur" shape="poly"
+coords="283,223,273,234,256,239,263,255,279,264,293,266,310,265,315,245,309,235,29
+3,230" onmouseover="enable(25)" onmouseout="disable()" >
+<area id="Viluppuram" shape="poly"
+coords="266,202,268,176,290,170,316,165,331,158,333,142,342,126,355,133,377,139,39
+1,146,407,147,399,161,389,170,377,173,382,183,380,198,357,190,342,182,335,191,333,2
+11,312,213,296,219,279,214" onmouseover="enable(26)" onmouseout="disable()" >
+<area id="Ariyalur" shape="poly"
+coords="309,284,305,260,320,236,341,236,358,252,350,268,333,283"
+onmouseover="enable(27)" onmouseout="disable()" >
+<area id="Cuddalore" shape="poly"
+coords="383,196,359,197,337,186,340,209,314,216,291,223,303,234,323,239,339,240,34
+9,245,358,256,374,249,385,237,383,210" onmouseover="enable(28)"
+onmouseout="disable()" >
+<area id="Kanchipuram" shape="poly"
+coords="403,143,418,127,426,111,440,87,439,64,419,64,398,70,383,63,367,77,382,87,37
+9,101,381,119,374,134,384,144" onmouseover="enable(29)" onmouseout="disable()" >
+<area id="krishnagiri" shape="poly"
+coords="166,153,136,144,154,124,154,93,170,91,179,76,196,79,215,87,227,93,240,111,2
+52,128,260,144,238,141,225,133,213,127,192,120,178,136" onmouseover="enable(30)"
+onmouseout="disable()" >
+<area id="Dharmapuri" shape="poly"
+coords="162,168,173,153,182,128,198,121,218,127,226,134,239,147,256,141,269,158,26
+5,181,248,187,226,188,215,168,199,175,173,181" onmouseover="enable(31)"
+onmouseout="disable()" >
+<area id="Tiruvannamalai" shape="poly"
+coords="269,166,266,146,278,130,294,102,304,94,323,89,343,92,355,79,371,85,377,100,
+383,119,357,129,340,122,326,141,328,158,312,165,289,167" onmouseover="enable(32)"
+onmouseout="disable()" >
+</map>
+<div id="covid_cases">
+<img src="" alt="" />
+<div id="about">
+<u> <h2> </h2></u>
+<br>
+<hr style="border: 1px dashed; visibility: hidden ">
+<p> </p>
+<i><span> Place mouse on any district from the Tamil nadu Map Know about the
+covid cases! </span> </i>
+</div>
+</div>
+</div>
+</body>
+</html>
